@@ -80,7 +80,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IntDir>$(SolutionDir)..\Temp\$(ProjectName)\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)_$(Configuration)</TargetName>
-    <OutDir>$(SolutionDir)..\Workbed\</OutDir>
+    <OutDir>$(SolutionDir)..\ServerBin\</OutDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)TShared\;$SolutionDir)Game\</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\DX2DEngine\;$(SolutionDir)..\Lib\</LibraryPath>
   </PropertyGroup>
