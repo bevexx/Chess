@@ -4,4 +4,5 @@
 /Lib/*
 /Temp/*
 /Source/.vs/*
+/Source/TShared/*SharedDefines.h
 !/ClientBin/sprites/.gitkeep
