@@ -1,0 +1,8 @@
+/root/
+    .gitignore
+    /Bin/*
+    /ServerBin/*
+    /Lib/*
+    /Temp/*
+    /Souce/.vs/*
+!/ClientBin/sprites/.gitkeep
