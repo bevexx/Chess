@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External">
+      <UniqueIdentifier>{b66af2f9-1e43-4aa6-9a07-71d6d5da711f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{befccd9b-c640-4dce-a089-3d79e9bd03ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{75533227-e75c-432d-a113-51a65b14c11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DataStructures">
+      <UniqueIdentifier>{7b3df4c6-402c-4d3e-8980-49308e10d919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio">
+      <UniqueIdentifier>{0b6e5afd-bf2e-44de-8b38-50a70e6822df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Directx">
+      <UniqueIdentifier>{41dbaa1d-231f-4196-8542-4b2aa684daa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Drawers">
+      <UniqueIdentifier>{1f790bac-7446-48e5-9245-a4c026d717ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ErrorManager">
+      <UniqueIdentifier>{8645a5a6-5213-404e-b0a1-2d58cfc00512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FileWatcher">
+      <UniqueIdentifier>{d38e49a5-20e2-4d28-b4a8-3f63b9c93d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\XInput">
+      <UniqueIdentifier>{7f902524-92f2-4329-a180-640c3acfefcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lights">
+      <UniqueIdentifier>{64a97666-c77f-4072-bb07-894f912ef7ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Loaders">
+      <UniqueIdentifier>{480beb8d-8cbe-4ae2-9452-e804efbe1e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\EngineMath">
+      <UniqueIdentifier>{5568e5dd-bd5a-436e-aaf3-98b840d8fddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model">
+      <UniqueIdentifier>{b94f0f8c-a448-44d7-82fb-8353b5cf259d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Primitives">
+      <UniqueIdentifier>{fe21ece4-a07d-4af3-981a-3aa547cd0879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Renderer">
+      <UniqueIdentifier>{7ac51cf1-c0a1-47ca-9350-aafec80405ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shaders">
+      <UniqueIdentifier>{e70019e1-00e3-49e4-9b98-284cea44adcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Sprite">
+      <UniqueIdentifier>{3ef03e04-a2a7-4d64-a256-b400e99198e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Text">
+      <UniqueIdentifier>{22c8997b-27f8-4ac6-a13d-bfef543bcdd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Texture">
+      <UniqueIdentifier>{0b87236f-70d2-4ad8-8df4-38b28e554ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\VideoPlayer">
+      <UniqueIdentifier>{3253a71b-d70b-44f0-afc1-9d94ebef3087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Windows">
+      <UniqueIdentifier>{a13006c9-e4eb-4304-ba86-7f4ca3ed7c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{616edc48-2c0e-4d88-8b38-a2cb314ae998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Assimp">
+      <UniqueIdentifier>{318d0194-08a0-4936-8d40-dadde693b637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Bass">
+      <UniqueIdentifier>{ac656d02-b3a7-4ab1-a58a-2225bfffa209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\DXXTK">
+      <UniqueIdentifier>{0c96b269-a565-44bc-bc4e-ac22cbff0863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\DXXTK\Src">
+      <UniqueIdentifier>{14ad8b6c-cb8a-47f8-a357-3aea8ef2c6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\DXXTK\Inc">
+      <UniqueIdentifier>{7ec64ab9-a309-4a8e-951b-83d1ded44ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Freetype">
+      <UniqueIdentifier>{0e8b656e-fe94-4045-a083-598cf8f344c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Animation">
+      <UniqueIdentifier>{8ad9cea5-a702-47f0-85e0-4bf3f009388f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Animation\math">
+      <UniqueIdentifier>{2398154a-eb9b-4c34-a869-00c74243f204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\imgui">
+      <UniqueIdentifier>{63436bf7-b9a6-46aa-9310-7755c2beb9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ImguiInterface">
+      <UniqueIdentifier>{e7ae20ac-296d-41e9-bcc4-45df82056abe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectXTK\Inc\DDSTextureLoader.h">
+      <Filter>External\DXXTK\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTK\Inc\WICTextureLoader.h">
+      <Filter>External\DXXTK\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTK\Inc\ScreenGrab.h">
+      <Filter>External\DXXTK\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\animation\Math\MathFunc.h">
+      <Filter>Source\Model\Animation\math</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\animation\AnimationController.h">
+      <Filter>Source\Model\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\animation\CAnimation.h">
+      <Filter>Source\Model\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\arrays\simple_pointer_array.h">
+      <Filter>Source\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\arrays\tinyarrayonheap.h">
+      <Filter>Source\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\audio\audio.h">
+      <Filter>Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\audio\audio_out.h">
+      <Filter>Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\d3d\direct_3d.h">
+      <Filter>Source\Directx</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\drawers\custom_shape_drawer.h">
+      <Filter>Source\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\drawers\debug_drawer.h">
+      <Filter>Source\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\drawers\debug_performancegraph.h">
+      <Filter>Source\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\drawers\line_drawer.h">
+      <Filter>Source\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\drawers\textured_quad_batch_drawer.h">
+      <Filter>Source\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\drawers\textured_quad_drawer.h">
+      <Filter>Source\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\error\error_manager.h">
+      <Filter>Source\ErrorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\filewatcher\file_watcher.h">
+      <Filter>Source\FileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\input\XInput.h">
+      <Filter>Source\XInput</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\light\light.h">
+      <Filter>Source\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\light\light_manager.h">
+      <Filter>Source\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\loaders\FBXLoader.h">
+      <Filter>Source\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\loaders\tgaloader.h">
+      <Filter>Source\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\math\color.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\math\common_math.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\math\matrix44.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\math\vector2.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\math\vector2imp.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\math\vector4.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\model\FBXModel.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\noise\perlin_noise.h">
+      <Filter>Source\EngineMath</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\primitives\custom_shape.h">
+      <Filter>Source\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\primitives\line_primitive.h">
+      <Filter>Source\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\primitives\model_shape.h">
+      <Filter>Source\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\render\render_common.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\render\render_object.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\render\renderer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\shaders\customshader.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\shaders\shader.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\shaders\shader_common.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\shaders\shader_model.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\shaders\shader_normal.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\shaders\shader_normal_instanced.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\sprite\sprite.h">
+      <Filter>Source\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\sprite\sprite_batch.h">
+      <Filter>Source\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\sprite\textured_quad.h">
+      <Filter>Source\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\sprite\textured_quad_batch.h">
+      <Filter>Source\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\fontfile.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\parser.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\text.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\text_service.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\text_structures.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\textfile.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\text\token.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\texture\texture.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\texture\texture_manager.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\videoplayer\video.h">
+      <Filter>Source\VideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\videoplayer\video_audio.h">
+      <Filter>Source\VideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\videoplayer\videoplayer.h">
+      <Filter>Source\VideoPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\windows\windows_window.h">
+      <Filter>Source\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\common_converters.h">
+      <Filter>Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\engine.h">
+      <Filter>Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\engine_defines.h">
+      <Filter>Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\StepTimer.h">
+      <Filter>Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Compiler\poppack1.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Compiler\pstdint.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Compiler\pushpack1.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Profiler.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\ProgressHandler.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\qnan.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\quaternion.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\RemoveComments.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\scene.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\SceneCombiner.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\SGSpatialSort.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\SkeletonMeshBuilder.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\SmoothingGroups.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\SpatialSort.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\StandardShapes.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\StreamReader.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\StreamWriter.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\StringComparison.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\StringUtils.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Subdivision.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\texture.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\TinyFormatter.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\types.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\vector2.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\vector3.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\version.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Vertex.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\XMLTools.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\ai_assert.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\anim.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\BaseImporter.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Bitmap.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\BlobIOSystem.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\ByteSwapper.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\camera.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\cexport.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\cfileio.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\cimport.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\color4.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\config.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\CreateAnimMesh.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\DefaultIOStream.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\DefaultIOSystem.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\DefaultLogger.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Defines.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\defs.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Exceptional.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Exporter.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\fast_atof.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\GenericProperty.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Hash.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Importer.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\importerdesc.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\IOStream.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\IOStreamBuffer.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\IOSystem.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\irrXMLWrapper.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\light.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\LineSplitter.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\LogAux.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Logger.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\LogStream.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\Macros.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\material.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\MathFunctions.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\matrix3x3.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\matrix4x4.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\MemoryIOWrapper.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\mesh.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\metadata.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\NullLogger.hpp">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\ParsingUtils.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\pbrmaterial.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\postprocess.h">
+      <Filter>External\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="bass\bass.h">
+      <Filter>External\Bass</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\config\ftconfig.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\config\ftheader.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\config\ftmodule.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\config\ftoption.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\config\ftstdlib.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svbdf.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svcid.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svfntfmt.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svgldict.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svgxval.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svkern.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svmm.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svotval.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svpfr.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svpostnm.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svprop.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svpscmap.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svpsinfo.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svsfnt.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svttcmap.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svtteng.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svttglyf.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\services\svwinfnt.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\autohint.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftcalc.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftdebug.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftdriver.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftgloadr.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\fthash.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftmemory.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftobjs.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftpic.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftrfork.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftserv.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftstream.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\fttrace.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\ftvalid.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\internal.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\psaux.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\pshints.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\sfnt.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\t1types.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\internal\tttypes.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftmodapi.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftmoderr.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftotval.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftoutln.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftpfr.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftrender.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftsizes.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftsnames.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftstroke.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftsynth.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftsystem.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\fttrigon.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftttdrv.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\fttypes.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftwinfnt.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\t1tables.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ttnameid.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\tttables.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\tttags.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ttunpat.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\freetype.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftadvanc.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftautoh.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftbbox.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftbdf.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftbitmap.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftbzip2.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftcache.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftcffdrv.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftchapters.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftcid.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\fterrdef.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\fterrors.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftfntfmt.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftgasp.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftglyph.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftgxval.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftgzip.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftimage.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftincrem.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftlcdfil.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftlist.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftlzw.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftmac.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype\ftmm.h">
+      <Filter>External\Freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ft2build.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="xxh64_en.hpp">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\model\ModelStatus.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imconfig.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_internal.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_rectpack.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_textedit.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_truetype.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="tga2d\imguiinterface\CImGuiInterface.h">
+      <Filter>Source\ImguiInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_impl_dx11.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_impl_win32.h">
+      <Filter>External\imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectXTK\Src\DDSTextureLoader.cpp">
+      <Filter>External\DXXTK\Inc</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTK\Src\WICTextureLoader.cpp">
+      <Filter>External\DXXTK\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTK\Src\ScreenGrab.cpp">
+      <Filter>External\DXXTK\Inc</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\animation\Math\MathFunc.cpp">
+      <Filter>Source\Model\Animation\math</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\animation\CAnimation.cpp">
+      <Filter>Source\Model\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\audio\audio.cpp">
+      <Filter>Source\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\audio\audio_out.cpp">
+      <Filter>Source\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\d3d\direct_3d.cpp">
+      <Filter>Source\Directx</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\drawers\custom_shape_drawer.cpp">
+      <Filter>Source\Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\drawers\debug_drawer.cpp">
+      <Filter>Source\Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\drawers\debug_performancegraph.cpp">
+      <Filter>Source\Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\drawers\line_drawer.cpp">
+      <Filter>Source\Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\drawers\textured_quad_batch_drawer.cpp">
+      <Filter>Source\Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\drawers\textured_quad_drawer.cpp">
+      <Filter>Source\Drawers</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\error\error_manager.cpp">
+      <Filter>Source\ErrorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\filewatcher\file_watcher.cpp">
+      <Filter>Source\FileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\input\XInput.cpp">
+      <Filter>Source\XInput</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\light\light.cpp">
+      <Filter>Source\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\light\light_manager.cpp">
+      <Filter>Source\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\loaders\FBXLoader.cpp">
+      <Filter>Source\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\loaders\tgaloader.cpp">
+      <Filter>Source\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\math\common_math.cpp">
+      <Filter>Source\EngineMath</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\model\FBXModel.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\noise\perlin_noise.cpp">
+      <Filter>Source\EngineMath</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\primitives\custom_shape.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\primitives\line_primitive.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\primitives\model_shape.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\render\render_object.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\render\renderer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\shaders\customshader.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\shaders\shader.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\shaders\shader_model.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\shaders\shader_normal.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\shaders\shader_normal_instanced.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\sprite\sprite.cpp">
+      <Filter>Source\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\sprite\sprite_batch.cpp">
+      <Filter>Source\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\sprite\textured_quad.cpp">
+      <Filter>Source\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\sprite\textured_quad_batch.cpp">
+      <Filter>Source\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\text\fontfile.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\text\parser.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\text\text.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\text\text_service.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\text\textfile.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\text\token.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\texture\texture.cpp">
+      <Filter>Source\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\texture\texture_manager.cpp">
+      <Filter>Source\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\videoplayer\video.cpp">
+      <Filter>Source\VideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\videoplayer\video_audio.cpp">
+      <Filter>Source\VideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\videoplayer\videoplayer.cpp">
+      <Filter>Source\VideoPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\windows\windows_window.cpp">
+      <Filter>Source\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\engine.cpp">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_widgets.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="tga2d\imguiinterface\CImGuiInterface.cpp">
+      <Filter>Source\ImguiInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_dx11.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_win32.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tga2dcore.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assimp\quaternion.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\SmoothingGroups.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\vector2.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\vector3.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\color4.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\config.h.in">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\material.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\matrix3x3.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+    <None Include="assimp\matrix4x4.inl">
+      <Filter>External\Assimp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

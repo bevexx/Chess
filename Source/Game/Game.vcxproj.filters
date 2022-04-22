@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Precompiled">
+      <UniqueIdentifier>{b07bafa4-d21c-4674-8f50-96a0b05e15ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CU">
+      <UniqueIdentifier>{459d3362-dc95-40f0-bd75-dea095213890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{8c94b78e-357f-4338-b381-5aaf7323add7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess">
+      <UniqueIdentifier>{b994cb9f-6700-4fb3-aae1-b20e020854e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess\Pieces">
+      <UniqueIdentifier>{ece0cc84-ca8e-45ce-ac3d-e6e4df14b1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess\Engine">
+      <UniqueIdentifier>{8f3c50fb-9bde-48ea-99e1-2f1dfc1c3097}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="resource.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Server.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Square.h">
+      <Filter>Chess</Filter>
+    </ClInclude>
+    <ClInclude Include="Piece.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Rook.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Horse.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Bishop.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="King.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.h">
+      <Filter>Chess\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="ChessAI.h">
+      <Filter>Chess</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="Client.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Square.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
+    <ClCompile Include="Piece.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Rook.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Bishop.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Horse.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Queen.cpp">
+      <Filter>Chess\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="ChessAI.cpp">
+      <Filter>Chess</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

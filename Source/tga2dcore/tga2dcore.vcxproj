@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Retail|x64">
+      <Configuration>Retail</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11F98BF6-7BDB-4CFB-96CF-577DB4AE312F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tga2dcore</RootNamespace>
+    <ProjectName>TGA2D</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\Lib\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);ffmpeg-2.0/;vld/;tga2d/</IncludePath>
+    <LibraryPath>ffmpeg-2.0\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\Lib\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);ffmpeg-2.0/;vld/;tga2d/</IncludePath>
+    <LibraryPath>ffmpeg-2.0\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">
+    <OutDir>$(SolutionDir)..\Lib\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);ffmpeg-2.0/;vld/;tga2d/</IncludePath>
+    <LibraryPath>ffmpeg-2.0\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)source\;$(ProjectDir)DirectXTK\Inc\;$(ProjectDir)spine\include\;$(ProjectDir)imgui-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DXGI.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_RELEASE;_LIB;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)source\;$(ProjectDir)DirectXTK\Inc\;$(ProjectDir)spine\include\;$(ProjectDir)imgui-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DXGI.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_RETAIL;_LIB;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)source\;$(ProjectDir)DirectXTK\Inc\;$(ProjectDir)spine\include\;$(ProjectDir)imgui-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DXGI.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="assimp\ai_assert.h" />
+    <ClInclude Include="assimp\anim.h" />
+    <ClInclude Include="assimp\BaseImporter.h" />
+    <ClInclude Include="assimp\Bitmap.h" />
+    <ClInclude Include="assimp\BlobIOSystem.h" />
+    <ClInclude Include="assimp\ByteSwapper.h" />
+    <ClInclude Include="assimp\camera.h" />
+    <ClInclude Include="assimp\cexport.h" />
+    <ClInclude Include="assimp\cfileio.h" />
+    <ClInclude Include="assimp\cimport.h" />
+    <ClInclude Include="assimp\color4.h" />
+    <ClInclude Include="assimp\Compiler\poppack1.h" />
+    <ClInclude Include="assimp\Compiler\pstdint.h" />
+    <ClInclude Include="assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="assimp\config.h" />
+    <ClInclude Include="assimp\CreateAnimMesh.h" />
+    <ClInclude Include="assimp\DefaultIOStream.h" />
+    <ClInclude Include="assimp\DefaultIOSystem.h" />
+    <ClInclude Include="assimp\DefaultLogger.hpp" />
+    <ClInclude Include="assimp\Defines.h" />
+    <ClInclude Include="assimp\defs.h" />
+    <ClInclude Include="assimp\Exceptional.h" />
+    <ClInclude Include="assimp\Exporter.hpp" />
+    <ClInclude Include="assimp\fast_atof.h" />
+    <ClInclude Include="assimp\GenericProperty.h" />
+    <ClInclude Include="assimp\Hash.h" />
+    <ClInclude Include="assimp\Importer.hpp" />
+    <ClInclude Include="assimp\importerdesc.h" />
+    <ClInclude Include="assimp\IOStream.hpp" />
+    <ClInclude Include="assimp\IOStreamBuffer.h" />
+    <ClInclude Include="assimp\IOSystem.hpp" />
+    <ClInclude Include="assimp\irrXMLWrapper.h" />
+    <ClInclude Include="assimp\light.h" />
+    <ClInclude Include="assimp\LineSplitter.h" />
+    <ClInclude Include="assimp\LogAux.h" />
+    <ClInclude Include="assimp\Logger.hpp" />
+    <ClInclude Include="assimp\LogStream.hpp" />
+    <ClInclude Include="assimp\Macros.h" />
+    <ClInclude Include="assimp\material.h" />
+    <ClInclude Include="assimp\MathFunctions.h" />
+    <ClInclude Include="assimp\matrix3x3.h" />
+    <ClInclude Include="assimp\matrix4x4.h" />
+    <ClInclude Include="assimp\MemoryIOWrapper.h" />
+    <ClInclude Include="assimp\mesh.h" />
+    <ClInclude Include="assimp\metadata.h" />
+    <ClInclude Include="assimp\NullLogger.hpp" />
+    <ClInclude Include="assimp\ParsingUtils.h" />
+    <ClInclude Include="assimp\pbrmaterial.h" />
+    <ClInclude Include="assimp\postprocess.h" />
+    <ClInclude Include="assimp\Profiler.h" />
+    <ClInclude Include="assimp\ProgressHandler.hpp" />
+    <ClInclude Include="assimp\qnan.h" />
+    <ClInclude Include="assimp\quaternion.h" />
+    <ClInclude Include="assimp\RemoveComments.h" />
+    <ClInclude Include="assimp\scene.h" />
+    <ClInclude Include="assimp\SceneCombiner.h" />
+    <ClInclude Include="assimp\SGSpatialSort.h" />
+    <ClInclude Include="assimp\SkeletonMeshBuilder.h" />
+    <ClInclude Include="assimp\SmoothingGroups.h" />
+    <ClInclude Include="assimp\SpatialSort.h" />
+    <ClInclude Include="assimp\StandardShapes.h" />
+    <ClInclude Include="assimp\StreamReader.h" />
+    <ClInclude Include="assimp\StreamWriter.h" />
+    <ClInclude Include="assimp\StringComparison.h" />
+    <ClInclude Include="assimp\StringUtils.h" />
+    <ClInclude Include="assimp\Subdivision.h" />
+    <ClInclude Include="assimp\texture.h" />
+    <ClInclude Include="assimp\TinyFormatter.h" />
+    <ClInclude Include="assimp\types.h" />
+    <ClInclude Include="assimp\vector2.h" />
+    <ClInclude Include="assimp\vector3.h" />
+    <ClInclude Include="assimp\version.h" />
+    <ClInclude Include="assimp\Vertex.h" />
+    <ClInclude Include="assimp\XMLTools.h" />
+    <ClInclude Include="bass\bass.h" />
+    <ClInclude Include="DirectXTK\Inc\DDSTextureLoader.h" />
+    <ClInclude Include="DirectXTK\Inc\ScreenGrab.h" />
+    <ClInclude Include="DirectXTK\Inc\WICTextureLoader.h" />
+    <ClInclude Include="freetype\config\ftconfig.h" />
+    <ClInclude Include="freetype\config\ftheader.h" />
+    <ClInclude Include="freetype\config\ftmodule.h" />
+    <ClInclude Include="freetype\config\ftoption.h" />
+    <ClInclude Include="freetype\config\ftstdlib.h" />
+    <ClInclude Include="freetype\freetype.h" />
+    <ClInclude Include="freetype\ftadvanc.h" />
+    <ClInclude Include="freetype\ftautoh.h" />
+    <ClInclude Include="freetype\ftbbox.h" />
+    <ClInclude Include="freetype\ftbdf.h" />
+    <ClInclude Include="freetype\ftbitmap.h" />
+    <ClInclude Include="freetype\ftbzip2.h" />
+    <ClInclude Include="freetype\ftcache.h" />
+    <ClInclude Include="freetype\ftcffdrv.h" />
+    <ClInclude Include="freetype\ftchapters.h" />
+    <ClInclude Include="freetype\ftcid.h" />
+    <ClInclude Include="freetype\fterrdef.h" />
+    <ClInclude Include="freetype\fterrors.h" />
+    <ClInclude Include="freetype\ftfntfmt.h" />
+    <ClInclude Include="freetype\ftgasp.h" />
+    <ClInclude Include="freetype\ftglyph.h" />
+    <ClInclude Include="freetype\ftgxval.h" />
+    <ClInclude Include="freetype\ftgzip.h" />
+    <ClInclude Include="freetype\ftimage.h" />
+    <ClInclude Include="freetype\ftincrem.h" />
+    <ClInclude Include="freetype\ftlcdfil.h" />
+    <ClInclude Include="freetype\ftlist.h" />
+    <ClInclude Include="freetype\ftlzw.h" />
+    <ClInclude Include="freetype\ftmac.h" />
+    <ClInclude Include="freetype\ftmm.h" />
+    <ClInclude Include="freetype\ftmodapi.h" />
+    <ClInclude Include="freetype\ftmoderr.h" />
+    <ClInclude Include="freetype\ftotval.h" />
+    <ClInclude Include="freetype\ftoutln.h" />
+    <ClInclude Include="freetype\ftpfr.h" />
+    <ClInclude Include="freetype\ftrender.h" />
+    <ClInclude Include="freetype\ftsizes.h" />
+    <ClInclude Include="freetype\ftsnames.h" />
+    <ClInclude Include="freetype\ftstroke.h" />
+    <ClInclude Include="freetype\ftsynth.h" />
+    <ClInclude Include="freetype\ftsystem.h" />
+    <ClInclude Include="freetype\fttrigon.h" />
+    <ClInclude Include="freetype\ftttdrv.h" />
+    <ClInclude Include="freetype\fttypes.h" />
+    <ClInclude Include="freetype\ftwinfnt.h" />
+    <ClInclude Include="freetype\internal\autohint.h" />
+    <ClInclude Include="freetype\internal\ftcalc.h" />
+    <ClInclude Include="freetype\internal\ftdebug.h" />
+    <ClInclude Include="freetype\internal\ftdriver.h" />
+    <ClInclude Include="freetype\internal\ftgloadr.h" />
+    <ClInclude Include="freetype\internal\fthash.h" />
+    <ClInclude Include="freetype\internal\ftmemory.h" />
+    <ClInclude Include="freetype\internal\ftobjs.h" />
+    <ClInclude Include="freetype\internal\ftpic.h" />
+    <ClInclude Include="freetype\internal\ftrfork.h" />
+    <ClInclude Include="freetype\internal\ftserv.h" />
+    <ClInclude Include="freetype\internal\ftstream.h" />
+    <ClInclude Include="freetype\internal\fttrace.h" />
+    <ClInclude Include="freetype\internal\ftvalid.h" />
+    <ClInclude Include="freetype\internal\internal.h" />
+    <ClInclude Include="freetype\internal\psaux.h" />
+    <ClInclude Include="freetype\internal\pshints.h" />
+    <ClInclude Include="freetype\internal\services\svbdf.h" />
+    <ClInclude Include="freetype\internal\services\svcid.h" />
+    <ClInclude Include="freetype\internal\services\svfntfmt.h" />
+    <ClInclude Include="freetype\internal\services\svgldict.h" />
+    <ClInclude Include="freetype\internal\services\svgxval.h" />
+    <ClInclude Include="freetype\internal\services\svkern.h" />
+    <ClInclude Include="freetype\internal\services\svmm.h" />
+    <ClInclude Include="freetype\internal\services\svotval.h" />
+    <ClInclude Include="freetype\internal\services\svpfr.h" />
+    <ClInclude Include="freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="freetype\internal\services\svprop.h" />
+    <ClInclude Include="freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="freetype\internal\services\svtteng.h" />
+    <ClInclude Include="freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="freetype\internal\sfnt.h" />
+    <ClInclude Include="freetype\internal\t1types.h" />
+    <ClInclude Include="freetype\internal\tttypes.h" />
+    <ClInclude Include="freetype\t1tables.h" />
+    <ClInclude Include="freetype\ttnameid.h" />
+    <ClInclude Include="freetype\tttables.h" />
+    <ClInclude Include="freetype\tttags.h" />
+    <ClInclude Include="freetype\ttunpat.h" />
+    <ClInclude Include="ft2build.h" />
+    <ClInclude Include="imgui-master\imconfig.h" />
+    <ClInclude Include="imgui-master\imgui.h" />
+    <ClInclude Include="imgui-master\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui-master\imgui_impl_win32.h" />
+    <ClInclude Include="imgui-master\imgui_internal.h" />
+    <ClInclude Include="imgui-master\imstb_rectpack.h" />
+    <ClInclude Include="imgui-master\imstb_textedit.h" />
+    <ClInclude Include="imgui-master\imstb_truetype.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tga2d\animation\AnimationController.h" />
+    <ClInclude Include="tga2d\animation\CAnimation.h" />
+    <ClInclude Include="tga2d\animation\Math\MathFunc.h" />
+    <ClInclude Include="tga2d\arrays\simple_pointer_array.h" />
+    <ClInclude Include="tga2d\arrays\tinyarrayonheap.h" />
+    <ClInclude Include="tga2d\audio\audio.h" />
+    <ClInclude Include="tga2d\audio\audio_out.h" />
+    <ClInclude Include="tga2d\common_converters.h" />
+    <ClInclude Include="tga2d\d3d\direct_3d.h" />
+    <ClInclude Include="tga2d\drawers\custom_shape_drawer.h" />
+    <ClInclude Include="tga2d\drawers\debug_drawer.h" />
+    <ClInclude Include="tga2d\drawers\debug_performancegraph.h" />
+    <ClInclude Include="tga2d\drawers\line_drawer.h" />
+    <ClInclude Include="tga2d\drawers\textured_quad_batch_drawer.h" />
+    <ClInclude Include="tga2d\drawers\textured_quad_drawer.h" />
+    <ClInclude Include="tga2d\engine.h" />
+    <ClInclude Include="tga2d\engine_defines.h" />
+    <ClInclude Include="tga2d\error\error_manager.h" />
+    <ClInclude Include="tga2d\filewatcher\file_watcher.h" />
+    <ClInclude Include="tga2d\imguiinterface\CImGuiInterface.h" />
+    <ClInclude Include="tga2d\input\XInput.h" />
+    <ClInclude Include="tga2d\light\light.h" />
+    <ClInclude Include="tga2d\light\light_manager.h" />
+    <ClInclude Include="tga2d\loaders\FBXLoader.h" />
+    <ClInclude Include="tga2d\loaders\tgaloader.h" />
+    <ClInclude Include="tga2d\math\color.h" />
+    <ClInclude Include="tga2d\math\common_math.h" />
+    <ClInclude Include="tga2d\math\matrix44.h" />
+    <ClInclude Include="tga2d\math\vector2.h" />
+    <ClInclude Include="tga2d\math\vector2imp.h" />
+    <ClInclude Include="tga2d\math\vector4.h" />
+    <ClInclude Include="tga2d\model\FBXModel.h" />
+    <ClInclude Include="tga2d\model\ModelStatus.h" />
+    <ClInclude Include="tga2d\noise\perlin_noise.h" />
+    <ClInclude Include="tga2d\primitives\custom_shape.h" />
+    <ClInclude Include="tga2d\primitives\line_primitive.h" />
+    <ClInclude Include="tga2d\primitives\model_shape.h" />
+    <ClInclude Include="tga2d\render\renderer.h" />
+    <ClInclude Include="tga2d\render\render_common.h" />
+    <ClInclude Include="tga2d\render\render_object.h" />
+    <ClInclude Include="tga2d\shaders\customshader.h" />
+    <ClInclude Include="tga2d\shaders\shader.h" />
+    <ClInclude Include="tga2d\shaders\shader_common.h" />
+    <ClInclude Include="tga2d\shaders\shader_model.h" />
+    <ClInclude Include="tga2d\shaders\shader_normal.h" />
+    <ClInclude Include="tga2d\shaders\shader_normal_instanced.h" />
+    <ClInclude Include="tga2d\sprite\sprite.h" />
+    <ClInclude Include="tga2d\sprite\sprite_batch.h" />
+    <ClInclude Include="tga2d\sprite\textured_quad.h" />
+    <ClInclude Include="tga2d\sprite\textured_quad_batch.h" />
+    <ClInclude Include="tga2d\StepTimer.h" />
+    <ClInclude Include="tga2d\texture\texture.h" />
+    <ClInclude Include="tga2d\texture\texture_manager.h" />
+    <ClInclude Include="tga2d\text\fontfile.h" />
+    <ClInclude Include="tga2d\text\parser.h" />
+    <ClInclude Include="tga2d\text\text.h" />
+    <ClInclude Include="tga2d\text\textfile.h" />
+    <ClInclude Include="tga2d\text\text_service.h" />
+    <ClInclude Include="tga2d\text\text_structures.h" />
+    <ClInclude Include="tga2d\text\token.h" />
+    <ClInclude Include="tga2d\videoplayer\video.h" />
+    <ClInclude Include="tga2d\videoplayer\videoplayer.h" />
+    <ClInclude Include="tga2d\videoplayer\video_audio.h" />
+    <ClInclude Include="tga2d\windows\windows_window.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="xxh64_en.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectXTK\Src\DDSTextureLoader.cpp" />
+    <ClCompile Include="DirectXTK\Src\ScreenGrab.cpp" />
+    <ClCompile Include="DirectXTK\Src\WICTextureLoader.cpp" />
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_dx11.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_win32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tga2d\animation\CAnimation.cpp" />
+    <ClCompile Include="tga2d\animation\Math\MathFunc.cpp" />
+    <ClCompile Include="tga2d\audio\audio.cpp" />
+    <ClCompile Include="tga2d\audio\audio_out.cpp" />
+    <ClCompile Include="tga2d\d3d\direct_3d.cpp" />
+    <ClCompile Include="tga2d\drawers\custom_shape_drawer.cpp" />
+    <ClCompile Include="tga2d\drawers\debug_drawer.cpp" />
+    <ClCompile Include="tga2d\drawers\debug_performancegraph.cpp" />
+    <ClCompile Include="tga2d\drawers\line_drawer.cpp" />
+    <ClCompile Include="tga2d\drawers\textured_quad_batch_drawer.cpp" />
+    <ClCompile Include="tga2d\drawers\textured_quad_drawer.cpp" />
+    <ClCompile Include="tga2d\engine.cpp" />
+    <ClCompile Include="tga2d\error\error_manager.cpp" />
+    <ClCompile Include="tga2d\filewatcher\file_watcher.cpp" />
+    <ClCompile Include="tga2d\imguiinterface\CImGuiInterface.cpp" />
+    <ClCompile Include="tga2d\input\XInput.cpp" />
+    <ClCompile Include="tga2d\light\light.cpp" />
+    <ClCompile Include="tga2d\light\light_manager.cpp" />
+    <ClCompile Include="tga2d\loaders\FBXLoader.cpp" />
+    <ClCompile Include="tga2d\loaders\tgaloader.cpp" />
+    <ClCompile Include="tga2d\math\common_math.cpp" />
+    <ClCompile Include="tga2d\model\FBXModel.cpp" />
+    <ClCompile Include="tga2d\noise\perlin_noise.cpp" />
+    <ClCompile Include="tga2d\primitives\custom_shape.cpp" />
+    <ClCompile Include="tga2d\primitives\line_primitive.cpp" />
+    <ClCompile Include="tga2d\primitives\model_shape.cpp" />
+    <ClCompile Include="tga2d\render\renderer.cpp" />
+    <ClCompile Include="tga2d\render\render_object.cpp" />
+    <ClCompile Include="tga2d\shaders\customshader.cpp" />
+    <ClCompile Include="tga2d\shaders\shader.cpp" />
+    <ClCompile Include="tga2d\shaders\shader_model.cpp" />
+    <ClCompile Include="tga2d\shaders\shader_normal.cpp" />
+    <ClCompile Include="tga2d\shaders\shader_normal_instanced.cpp" />
+    <ClCompile Include="tga2d\sprite\sprite.cpp" />
+    <ClCompile Include="tga2d\sprite\sprite_batch.cpp" />
+    <ClCompile Include="tga2d\sprite\textured_quad.cpp" />
+    <ClCompile Include="tga2d\sprite\textured_quad_batch.cpp" />
+    <ClCompile Include="tga2d\texture\texture.cpp" />
+    <ClCompile Include="tga2d\texture\texture_manager.cpp" />
+    <ClCompile Include="tga2d\text\fontfile.cpp" />
+    <ClCompile Include="tga2d\text\parser.cpp" />
+    <ClCompile Include="tga2d\text\text.cpp" />
+    <ClCompile Include="tga2d\text\textfile.cpp" />
+    <ClCompile Include="tga2d\text\text_service.cpp" />
+    <ClCompile Include="tga2d\text\token.cpp" />
+    <ClCompile Include="tga2d\videoplayer\video.cpp" />
+    <ClCompile Include="tga2d\videoplayer\videoplayer.cpp" />
+    <ClCompile Include="tga2d\videoplayer\video_audio.cpp" />
+    <ClCompile Include="tga2d\windows\windows_window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tga2dcore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assimp\color4.inl" />
+    <None Include="assimp\config.h.in" />
+    <None Include="assimp\material.inl" />
+    <None Include="assimp\matrix3x3.inl" />
+    <None Include="assimp\matrix4x4.inl" />
+    <None Include="assimp\quaternion.inl" />
+    <None Include="assimp\SmoothingGroups.inl" />
+    <None Include="assimp\vector2.inl" />
+    <None Include="assimp\vector3.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
